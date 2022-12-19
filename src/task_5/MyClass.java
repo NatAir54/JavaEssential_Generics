@@ -3,14 +3,14 @@ package task_5;
 public class MyClass <T>{
 
 
-    public static <T> T factoryMethod(T obj){
+    public static <T> void factoryMethod(T obj){
 
-        return obj;
+        System.out.println(obj);
     }
+
 
     public static void main(String[] args) {
 
-        System.out.println(factoryMethod(new String("my first factory method")));
+        factoryMethod(new String("my first factory method"));
     }
-
 }
