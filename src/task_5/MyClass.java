@@ -9,7 +9,10 @@ public class MyClass <T> {
 
 class MainApp {
     public static void main(String[] args) {
-        System.out.println(MyClass.factoryMethod(new String("my first factory method")));
+
+        System.out.println(MyClass.factoryMethod("my first factory method"));
+        System.out.println(MyClass.factoryMethod(0.57));
+        System.out.println(MyClass.factoryMethod(88989999900L));
     }
 
 }
