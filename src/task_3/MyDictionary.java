@@ -3,18 +3,18 @@ package task_3;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MyDictionary <T, V>{
-    Map<T, V> myDictionary = new HashMap<T, V>();
+public class MyDictionary <K, V>{
+    Map<K, V> myDictionary = new HashMap<K, V>();
 
-    public Map<T, V> getMyDictionary() {
+    public Map<K, V> getMyDictionary() {
         return myDictionary;
     }
 
-    public void addKeyAndValue(T key, V value) {
+    public void addKeyAndValue(K key, V value) {
         myDictionary.put(key, value);
     }
 
-    public V getValueByKey(T key) {
+    public V getValueByKey(K key) {
         return myDictionary.get(key);
     }
 
