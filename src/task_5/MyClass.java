@@ -1,6 +1,5 @@
 package task_5;
 
-import java.util.Arrays;
 
 public class MyClass <T> {
     public T field;
@@ -26,7 +25,6 @@ class MainApp {
         System.out.println(MyClass.factoryMethod("my first factory method"));
         System.out.println(MyClass.factoryMethod(0.57));
         System.out.println(MyClass.factoryMethod(88989999900L));
-
     }
 
 }
